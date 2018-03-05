@@ -13,3 +13,5 @@ E:\Code Visual 2013\CoffeeHome\CoffeeHome\obj\Debug\CoffeeHome.csproj.GenerateRe
 E:\Code Visual 2013\CoffeeHome\CoffeeHome\obj\Debug\CoffeeHome.exe
 E:\Code Visual 2013\CoffeeHome\CoffeeHome\obj\Debug\CoffeeHome.pdb
 E:\Code Visual 2013\CoffeeHome\CoffeeHome\obj\Debug\App.baml
+E:\Code Visual 2013\CoffeeHome\CoffeeHome\obj\Debug\HomeWindow.g.cs
+E:\Code Visual 2013\CoffeeHome\CoffeeHome\obj\Debug\HomeWindow.baml

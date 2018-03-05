@@ -114,7 +114,7 @@
                         FontSize="16"
                         FontWeight="Bold"
                         FontFamily="/CoffeeHome;component/CoffeeHomeFont/#Roboto"
-                        Style="{StaticResource ButtonLoginForm}">
+                        Style="{StaticResource ButtonLoginForm}" Click="btnLogin_Click">
                     Đăng nhập
                 </Button>
                 <Button Width="100"
