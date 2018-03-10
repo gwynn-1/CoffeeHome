@@ -4,6 +4,7 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:CoffeeHome"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
         mc:Ignorable="d"
         Title="Coffee Home - Login" 
         Height="650" Width="500"
@@ -83,46 +84,40 @@
             </TextBlock>
         </Grid>
         <StackPanel Grid.Row="1" Background="WhiteSmoke">
-            <TextBlock Margin="100, 30 , 100, 0"
-                       Name="txblUsername"
-                       FontFamily="/CoffeeHome;component/CoffeeHomeFont/#Roboto"
-                       FontSize="15">
-                Tài khoản
-            </TextBlock>
-            <TextBox Margin="100,10,100,0"
+            <TextBox Margin="100,80,100,0"
                      Name="txbUsername"
                      FontSize="14"
                      FontFamily="/CoffeeHome;component/CoffeeHomeFont/#Roboto"
-                     Padding="5"
-                     Template="{StaticResource TextBoxBaseControlTemplate}"></TextBox>
-            <TextBlock Margin="100, 30 , 100, 0"
-                       Name="txblPassword"
-                       FontFamily="/CoffeeHome;component/CoffeeHomeFont/#Roboto"
-                       FontSize="15">
-                Mật khẩu
-            </TextBlock>
-            <TextBox Margin="100, 10 , 100, 0"
+                   
+                     materialDesign:HintAssist.Hint="Tài khoản"
+                    Style="{StaticResource MaterialDesignFloatingHintTextBox}"></TextBox>
+            <PasswordBox Margin="100, 30 , 100, 0"
                      Name="txbPassword"
                      FontSize="14"
-                     Padding="5"
                      FontFamily="/CoffeeHome;component/CoffeeHomeFont/#Roboto"
-                     Template="{StaticResource TextBoxBaseControlTemplate}"></TextBox>
+                     materialDesign:HintAssist.Hint="Password"
+                     Style="{StaticResource MaterialDesignFloatingHintPasswordBox}"></PasswordBox>
             <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="100, 50 , 100, 0">
                 <Button Width="120"
                         Name="btnLogin"
                         Margin="0,0,30,0"
                         FontSize="16"
                         FontWeight="Bold"
+                        Background="#EA8024"
                         FontFamily="/CoffeeHome;component/CoffeeHomeFont/#Roboto"
-                        Style="{StaticResource ButtonLoginForm}" Click="btnLogin_Click">
+                        Style="{StaticResource MaterialDesignRaisedDarkButton}"
+                        materialDesign:ShadowAssist.ShadowDepth="Depth2"
+                        Click="btnLogin_Click">
                     Đăng nhập
                 </Button>
-                <Button Width="100"
+                <Button Width="120"
                         Name="btnForgotPass"
                         FontSize="16"
                         FontWeight="Bold"
+                        Background="#EA8024"
                         FontFamily="/CoffeeHome;component/CoffeeHomeFont/#Roboto"
-                        Style="{StaticResource ButtonLoginForm}">
+                        Style="{StaticResource MaterialDesignRaisedDarkButton}"
+                        materialDesign:ShadowAssist.ShadowDepth="Depth2">
                     Thoát
                 </Button>
             </StackPanel>
