@@ -113,11 +113,8 @@
     <Compile Include="Model\Table.cs">
       <DependentUpon>CoffeeHomeEntityModel.tt</DependentUpon>
     </Compile>
-    <Compile Include="TemplateView\DrinkAndFoodTemplate.xaml.cs">
-      <DependentUpon>DrinkAndFoodTemplate.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="TemplateView\DrinkTypeTemplate.xaml.cs">
-      <DependentUpon>DrinkTypeTemplate.xaml</DependentUpon>
+    <Compile Include="TemplateView\AdminTemplate.xaml.cs">
+      <DependentUpon>AdminTemplate.xaml</DependentUpon>
     </Compile>
     <Compile Include="ViewModel\BaseViewModel.cs" />
     <Compile Include="ViewModel\HomeViewModel.cs" />
@@ -141,11 +138,7 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Page Include="TemplateView\DrinkAndFoodTemplate.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="TemplateView\DrinkTypeTemplate.xaml">
+    <Page Include="TemplateView\AdminTemplate.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
