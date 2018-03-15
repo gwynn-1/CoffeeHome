@@ -51,7 +51,11 @@
                         Background="#EA8024"
                         FontFamily="/CoffeeHome;component/CoffeeHomeFont/#Roboto"
                         Style="{StaticResource MaterialDesignRaisedDarkButton}"
-                        materialDesign:ShadowAssist.ShadowDepth="Depth2" Content="{Binding Name}">
+                        materialDesign:ShadowAssist.ShadowDepth="Depth2">
+                        <TextBlock>
+                            <Run Text="Thêm"/>
+                            <Run Text="{Binding Name}"/>
+                        </TextBlock>
                     </Button>
                     <TextBox DockPanel.Dock="Right"
                          FontSize="14"

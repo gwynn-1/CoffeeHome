@@ -17,8 +17,8 @@ namespace CoffeeHome.ViewModel
         public HomeViewModel()
         {
             this.Items = new ObservableCollection<ItemField>(){
-                  new ItemField("Thức uống & Đồ ăn",this.template,"Images/drink-food.png"),
-                  new ItemField("Loại thức uống",this.template,"Images/drink-type.png")
+                  new ItemField("Đồ uống",this.template,"Images/drink-food.png"),
+                  new ItemField("Loại đồ uống",this.template,"Images/drink-type.png")
             };        }
     }
 }

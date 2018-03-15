@@ -26,3 +26,4 @@ E:\Code Visual 2013\CoffeeHome\CoffeeHome\obj\Debug\CoffeeHome.Properties.Resour
 E:\Code Visual 2013\CoffeeHome\CoffeeHome\obj\Debug\CoffeeHome.csproj.GenerateResource.Cache
 E:\Code Visual 2013\CoffeeHome\CoffeeHome\obj\Debug\CoffeeHome.exe
 E:\Code Visual 2013\CoffeeHome\CoffeeHome\obj\Debug\CoffeeHome.pdb
+E:\Code Visual 2013\CoffeeHome\CoffeeHome\obj\Debug\CoffeeHome.csprojResolveAssemblyReference.cache
