@@ -9,7 +9,7 @@ using CoffeeHome.Model;
 
 namespace CoffeeHome.ViewModel
 {
-    class HomeViewModel : BaseViewModel
+    public class HomeViewModel : BaseViewModel
     {
         public ObservableCollection<ItemField> Items { get; }
 
@@ -19,6 +19,7 @@ namespace CoffeeHome.ViewModel
             this.Items = new ObservableCollection<ItemField>(){
                   new ItemField("Đồ uống",this.template,"Images/drink-food.png"),
                   new ItemField("Loại đồ uống",this.template,"Images/drink-type.png")
-            };        }
+            };
+        }
     }
 }
