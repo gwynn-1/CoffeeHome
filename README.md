@@ -38,19 +38,28 @@ Công nghệ : WPF.NET, Entity Framework, SQLServer
 #### Phần mềm
 
   Windows XP with Service Pack 2 or Higher
+  
   Windows 7,8,8.1,10
+  
   Windows 2000 SP4 + KB 891861*
+  
   Windows Server 2008, 2008 R2 
+  
   Windows Server 2003 (excluding IA-64)
+  
   .NET Framework 3.0 or Higher
 #### Phần cứng
 
   Processor: x86 or x64 1 GHz Pentium processor or equivalent (minimum); 1 GHz Pentium processor or equivalent (recommended)
+  
   512 MBytes RAM (minimum) or 1 GB RAM (recommended)
+  
   A DirectX 9 capable graphics adapter
 
 ## Author
 
 Lead Team + Developer: Trần Lê Vĩnh Huy
+
 Designer : Hiếu
+
 Developer : Lê Công Pha, Nguyễn Ngọc Tấn Tài
