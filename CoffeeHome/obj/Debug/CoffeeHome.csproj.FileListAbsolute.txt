@@ -33,3 +33,9 @@ E:\Code Visual 2013\CoffeeHome\CoffeeHome\obj\Debug\CoffeeHome.csproj.GenerateRe
 E:\Code Visual 2013\CoffeeHome\CoffeeHome\obj\Debug\CoffeeHome.exe
 E:\Code Visual 2013\CoffeeHome\CoffeeHome\obj\Debug\CoffeeHome.pdb
 E:\Code Visual 2013\CoffeeHome\CoffeeHome\obj\Debug\CoffeeHome.csprojResolveAssemblyReference.cache
+E:\Code Visual 2013\CoffeeHome\CoffeeHome\obj\Debug\CoffeeHome.csproj.CoreCompileInputs.cache
+E:\Code Visual 2013\CoffeeHome\CoffeeHome\obj\Debug\CoffeeHome.csproj.CopyComplete
+E:\Code Visual 2013\CoffeeHome\CoffeeHome\obj\Debug\TemplateView\FoodDrinkTemplate.g.cs
+E:\Code Visual 2013\CoffeeHome\CoffeeHome\obj\Debug\TemplateView\FoodDrinkTemplate.baml
+E:\Code Visual 2013\CoffeeHome\CoffeeHome\obj\Debug\TemplateView\DrinkTypeTemplate.g.cs
+E:\Code Visual 2013\CoffeeHome\CoffeeHome\obj\Debug\TemplateView\DrinkTypeTemplate.baml

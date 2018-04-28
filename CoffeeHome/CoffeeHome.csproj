@@ -109,6 +109,8 @@
     <Compile Include="Model\DrinkAndDessert.cs">
       <DependentUpon>CoffeeHomeEntityModel.tt</DependentUpon>
     </Compile>
+    <Compile Include="Model\DrinkDessertModel.cs" />
+    <Compile Include="Model\DrinkTypeModel.cs" />
     <Compile Include="Model\Drink_type.cs">
       <DependentUpon>CoffeeHomeEntityModel.tt</DependentUpon>
     </Compile>
@@ -128,6 +130,12 @@
     <Compile Include="TemplateView\AdminTemplate.xaml.cs">
       <DependentUpon>AdminTemplate.xaml</DependentUpon>
     </Compile>
+    <Compile Include="TemplateView\DrinkTypeTemplate.xaml.cs">
+      <DependentUpon>DrinkTypeTemplate.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="TemplateView\FoodDrinkTemplate.xaml.cs">
+      <DependentUpon>FoodDrinkTemplate.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Validation\ConfirmPasswordValidate.cs" />
     <Compile Include="Validation\EmailValidation.cs" />
     <Compile Include="Validation\MaxMinValidation.cs" />
@@ -136,6 +144,8 @@
     <Compile Include="Validation\RequiredValidation.cs" />
     <Compile Include="Validation\UniqueValidation.cs" />
     <Compile Include="ViewModel\BaseViewModel.cs" />
+    <Compile Include="ViewModel\DrinkTypeViewModel.cs" />
+    <Compile Include="ViewModel\DrinkDessertViewModel.cs" />
     <Compile Include="ViewModel\HomeViewModel.cs" />
     <Compile Include="ViewModel\ItemField.cs" />
     <Compile Include="ViewModel\MainViewModel.cs" />
@@ -166,6 +176,14 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="TemplateView\AdminTemplate.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="TemplateView\DrinkTypeTemplate.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="TemplateView\FoodDrinkTemplate.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

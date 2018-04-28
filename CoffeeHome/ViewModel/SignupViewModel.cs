@@ -12,24 +12,25 @@ namespace CoffeeHome.ViewModel
     public class SignupViewModel:BaseViewModel
     {
         public ICommand signupCommand { get; set; }
-        public StaffModel Staff { get => staff; set {
-                staff = value;
-                OnPropertyChanged("staff");
+        public Staff StaffViewObject
+        { get => staffViewObject; set {
+                staffViewObject = value;
+                OnPropertyChanged("staffViewObject");
             }
         }
 
-        private StaffModel staff = new StaffModel(); 
+        private StaffModel staff = new StaffModel();
+        private Staff staffViewObject = new Staff();
 
         public SignupViewModel()
         {
-            this.signupCommand = new RelayCommand<StaffModel>( p=> true , OnSignupCommand);
+            this.signupCommand = new RelayCommand<Staff>( p=> true , OnSignupCommand);
         }
 
-        private void OnSignupCommand(StaffModel obj)
+        private void OnSignupCommand(Staff obj)
         {
-            Staff = obj;
-            Staff.Password = MD5Provider.MD5Encrypt(Staff.Password);
-            if (Staff.CreateStaff())
+            obj.password = MD5Provider.MD5Encrypt(obj.password);
+            if (staff.CreateStaff(obj))
             {
 
             }

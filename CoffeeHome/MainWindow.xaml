@@ -73,7 +73,7 @@
                      materialDesign:HintAssist.Hint="Tài khoản"
                      Style="{StaticResource MaterialDesignFloatingHintTextBox}">
                         <TextBox.Text>
-                            <Binding Path="Staff.Username" UpdateSourceTrigger="PropertyChanged" Delay="700"
+                            <Binding Path="StaffViewObject.username" UpdateSourceTrigger="PropertyChanged" Delay="700"
                              ValidatesOnDataErrors="True">
                                 <Binding.ValidationRules>
                                     <validation:RequiredValidation PropertyName="Tên" ValidatesOnTargetUpdated="True"/>
@@ -93,7 +93,7 @@
                      materialDesign:ValidationAssist.OnlyShowOnFocus="True"
                      Style="{StaticResource MaterialDesignFloatingHintPasswordBox}">
                     <mainviewmodel:PasswordHelper.Password>
-                        <Binding Path="Staff.Password" UpdateSourceTrigger="PropertyChanged" Mode="OneWayToSource" Delay="700"
+                        <Binding Path="StaffViewObject.password" UpdateSourceTrigger="PropertyChanged" Mode="OneWayToSource" Delay="700"
                              ValidatesOnDataErrors="True">
                             <Binding.ValidationRules>
                                 <validation:RequiredValidation PropertyName="Mật khẩu" ValidatesOnTargetUpdated="True"/>

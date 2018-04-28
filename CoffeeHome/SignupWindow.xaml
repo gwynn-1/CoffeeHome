@@ -79,7 +79,7 @@
                      materialDesign:HintAssist.Hint="Tên"
                      Style="{StaticResource MaterialDesignFloatingHintTextBox}">
                     <TextBox.Text>
-                        <Binding Path="Staff.Name" UpdateSourceTrigger="PropertyChanged" Delay="700"
+                        <Binding Path="StaffViewObject.name" UpdateSourceTrigger="PropertyChanged" Delay="700"
                              ValidatesOnDataErrors="True">
                             <Binding.ValidationRules>
                                 <validation:RequiredValidation PropertyName="Tên" ValidatesOnTargetUpdated="True"/>
@@ -99,7 +99,7 @@
                      materialDesign:HintAssist.Hint="Tên Đăng nhập"
                      Style="{StaticResource MaterialDesignFloatingHintTextBox}">
                     <TextBox.Text>
-                        <Binding Path="Staff.Username" UpdateSourceTrigger="PropertyChanged" Delay="700"
+                        <Binding Path="StaffViewObject.username" UpdateSourceTrigger="PropertyChanged" Delay="700"
                              ValidatesOnDataErrors="True">
                             <Binding.ValidationRules>
                                 <validation:RequiredValidation PropertyName="Tên đăng nhập" ValidatesOnTargetUpdated="True"/>
@@ -121,7 +121,7 @@
                      materialDesign:HintAssist.Hint="Mật khẩu"
                      Style="{StaticResource MaterialDesignFloatingHintPasswordBox}">
                     <signupviewmodel:PasswordHelper.Password>
-                        <Binding Path="Staff.Password" UpdateSourceTrigger="PropertyChanged" Mode="OneWayToSource" Delay="700"
+                        <Binding Path="StaffViewObject.password" UpdateSourceTrigger="PropertyChanged" Mode="OneWayToSource" Delay="700"
                              ValidatesOnDataErrors="True">
                             <Binding.ValidationRules>
                                 <validation:RequiredValidation PropertyName="Mật khẩu" ValidatesOnTargetUpdated="True"/>
@@ -145,7 +145,7 @@
                         <validation:BindingProxy x:Key="TargetProxy" Data="{Binding Path=(signupviewmodel:PasswordHelper.Password), ElementName=txbpPassword, UpdateSourceTrigger=PropertyChanged}"/>
                     </PasswordBox.Resources>
                     <signupviewmodel:PasswordHelper.Password>
-                        <Binding Path="Staff.Repassword" UpdateSourceTrigger="PropertyChanged" Mode="OneWayToSource" Delay="700"
+                        <Binding Path="StaffViewObject.password" UpdateSourceTrigger="PropertyChanged" Mode="OneWayToSource" Delay="700"
                              ValidatesOnDataErrors="True">
                             <Binding.ValidationRules>
                                 <validation:ConfirmPasswordValidate>
@@ -168,7 +168,7 @@
                      materialDesign:ValidationAssist.OnlyShowOnFocus="True"
                      Style="{StaticResource MaterialDesignFloatingHintTextBox}">
                     <TextBox.Text>
-                        <Binding Path="Staff.Email" UpdateSourceTrigger="PropertyChanged" Delay="700"
+                        <Binding Path="StaffViewObject.email" UpdateSourceTrigger="PropertyChanged" Delay="700"
                              ValidatesOnDataErrors="True">
                             <Binding.ValidationRules>
                                 <validation:RequiredValidation PropertyName="Email" ValidatesOnTargetUpdated="True"/>
@@ -190,7 +190,7 @@
                      materialDesign:ValidationAssist.OnlyShowOnFocus="True"
                      Style="{StaticResource MaterialDesignFloatingHintTextBox}">
                     <TextBox.Text>
-                        <Binding Path="Staff.Sdt" UpdateSourceTrigger="PropertyChanged" Delay="700"
+                        <Binding Path="StaffViewObject.sdt" UpdateSourceTrigger="PropertyChanged" Delay="700"
                              ValidatesOnDataErrors="True">
                             <Binding.ValidationRules>
                                 <validation:RequiredValidation PropertyName="Số điện thoại" ValidatesOnTargetUpdated="True"/>
