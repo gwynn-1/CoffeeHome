@@ -33,9 +33,9 @@
                       materialDesign:DataGridAssist.ColumnHeaderPadding="8"
                         IsReadOnly="True">
             <DataGrid.Columns>
-                <DataGridTextColumn Binding="{Binding id_type}"
-                                          Header="ID"
-                                          EditingElementStyle="{StaticResource MaterialDesignDataGridTextColumnEditingStyle}" />
+                <materialDesign:MaterialDataGridTextColumn Binding="{Binding id_type}"
+                                                              Header="ID"
+                                                              EditingElementStyle="{StaticResource MaterialDesignDataGridTextColumnPopupEditingStyle}" />
                 
                 <!-- if you want to use the pop up style (MaterialDesignDataGridTextColumnPopupEditingStyle), you must use MaterialDataGridTextColumn -->
                 <materialDesign:MaterialDataGridTextColumn Binding="{Binding name}"
@@ -48,21 +48,8 @@
                                                               EditingElementStyle="{StaticResource MaterialDesignDataGridTextColumnPopupEditingStyle}" />
                 <materialDesign:MaterialDataGridTextColumn Binding="{Binding created_at}"
                                                               Header="Ngày Tạo"
-                                                              EditingElementStyle="{StaticResource MaterialDesignDataGridTextColumnPopupEditingStyle}">
-                    <DataGridTextColumn.HeaderStyle>
-                        <Style TargetType="{x:Type DataGridColumnHeader}"
-                                  BasedOn="{StaticResource MaterialDesignDataGridColumnHeader}">
-                            <Setter Property="HorizontalAlignment"
-                                        Value="Right" />
-                        </Style>
-                    </DataGridTextColumn.HeaderStyle>
-                    <DataGridTextColumn.ElementStyle>
-                        <Style TargetType="{x:Type TextBlock}">
-                            <Setter Property="HorizontalAlignment"
-                                        Value="Right" />
-                        </Style>
-                    </DataGridTextColumn.ElementStyle>
-                </materialDesign:MaterialDataGridTextColumn>
+                                                              EditingElementStyle="{StaticResource MaterialDesignDataGridTextColumnPopupEditingStyle}"/>
+
                 <!-- use custom combo box column to get better combos. Use ItemsSourceBinding as your binding template to be applied to each combo -->
                 <materialDesign:MaterialDataGridComboBoxColumn Header="Action"
                                                                   SelectedValueBinding="{Binding Food}"

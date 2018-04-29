@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace CoffeeHome.Model
 {
-    class DrinkDessertModel
+    public class DrinkDessertModel
     {
         private static CoffeeHomeEntities db = new CoffeeHomeEntities();
 

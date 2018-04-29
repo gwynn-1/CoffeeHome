@@ -77,64 +77,85 @@
     <Compile Include="Converter\LoginConverter.cs" />
     <Compile Include="Converter\SignupConverter.cs" />
     <Compile Include="Model\Bill.cs">
-      <DependentUpon>CoffeeHomeEntityModel.tt</DependentUpon>
+      <DependentUpon>CoffeeHome.tt</DependentUpon>
     </Compile>
+    <Compile Include="Model\BillDetailModel.cs" />
+    <Compile Include="Model\BillModel.cs" />
+    <Compile Include="Model\BillOnlineDetailModel.cs" />
+    <Compile Include="Model\BillOnlineModel.cs" />
     <Compile Include="Model\Bill_details.cs">
-      <DependentUpon>CoffeeHomeEntityModel.tt</DependentUpon>
+      <DependentUpon>CoffeeHome.tt</DependentUpon>
     </Compile>
     <Compile Include="Model\Bill_Online.cs">
-      <DependentUpon>CoffeeHomeEntityModel.tt</DependentUpon>
+      <DependentUpon>CoffeeHome.tt</DependentUpon>
     </Compile>
     <Compile Include="Model\Bill_Online_Detail.cs">
-      <DependentUpon>CoffeeHomeEntityModel.tt</DependentUpon>
+      <DependentUpon>CoffeeHome.tt</DependentUpon>
     </Compile>
-    <Compile Include="Model\CoffeeHomeEntityModel.Context.cs">
+    <Compile Include="Model\CoffeeHome.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>CoffeeHomeEntityModel.Context.tt</DependentUpon>
+      <DependentUpon>CoffeeHome.Context.tt</DependentUpon>
     </Compile>
-    <Compile Include="Model\CoffeeHomeEntityModel.cs">
+    <Compile Include="Model\CoffeeHome.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>CoffeeHomeEntityModel.tt</DependentUpon>
+      <DependentUpon>CoffeeHome.tt</DependentUpon>
     </Compile>
-    <Compile Include="Model\CoffeeHomeEntityModel.Designer.cs">
+    <Compile Include="Model\CoffeeHome.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>CoffeeHomeEntityModel.edmx</DependentUpon>
+      <DependentUpon>CoffeeHome.edmx</DependentUpon>
     </Compile>
     <Compile Include="Model\Customer.cs">
-      <DependentUpon>CoffeeHomeEntityModel.tt</DependentUpon>
+      <DependentUpon>CoffeeHome.tt</DependentUpon>
     </Compile>
+    <Compile Include="Model\CustomerModel.cs" />
     <Compile Include="Model\DrinkAndDessert.cs">
-      <DependentUpon>CoffeeHomeEntityModel.tt</DependentUpon>
+      <DependentUpon>CoffeeHome.tt</DependentUpon>
     </Compile>
     <Compile Include="Model\DrinkDessertModel.cs" />
     <Compile Include="Model\DrinkTypeModel.cs" />
     <Compile Include="Model\Drink_type.cs">
-      <DependentUpon>CoffeeHomeEntityModel.tt</DependentUpon>
+      <DependentUpon>CoffeeHome.tt</DependentUpon>
     </Compile>
     <Compile Include="Model\Staff.cs">
-      <DependentUpon>CoffeeHomeEntityModel.tt</DependentUpon>
+      <DependentUpon>CoffeeHome.tt</DependentUpon>
     </Compile>
     <Compile Include="Model\StaffModel.cs" />
-    <Compile Include="Model\sysdiagram.cs">
-      <DependentUpon>CoffeeHomeEntityModel.tt</DependentUpon>
-    </Compile>
     <Compile Include="Model\Table.cs">
-      <DependentUpon>CoffeeHomeEntityModel.tt</DependentUpon>
+      <DependentUpon>CoffeeHome.tt</DependentUpon>
     </Compile>
+    <Compile Include="Model\TableModel.cs" />
     <Compile Include="SignupWindow.xaml.cs">
       <DependentUpon>SignupWindow.xaml</DependentUpon>
     </Compile>
     <Compile Include="TemplateView\AdminTemplate.xaml.cs">
       <DependentUpon>AdminTemplate.xaml</DependentUpon>
     </Compile>
+    <Compile Include="TemplateView\BillDetailTemplate.xaml.cs">
+      <DependentUpon>BillDetailTemplate.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="TemplateView\BillOnlineDetailTemplate.xaml.cs">
+      <DependentUpon>BillOnlineDetailTemplate.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="TemplateView\BillOnlineTemplate.xaml.cs">
+      <DependentUpon>BillOnlineTemplate.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="TemplateView\BillTemplate.xaml.cs">
+      <DependentUpon>BillTemplate.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="TemplateView\CustomerTemplate.xaml.cs">
+      <DependentUpon>CustomerTemplate.xaml</DependentUpon>
+    </Compile>
     <Compile Include="TemplateView\DrinkTypeTemplate.xaml.cs">
       <DependentUpon>DrinkTypeTemplate.xaml</DependentUpon>
     </Compile>
     <Compile Include="TemplateView\FoodDrinkTemplate.xaml.cs">
       <DependentUpon>FoodDrinkTemplate.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="TemplateView\TableTemplate.xaml.cs">
+      <DependentUpon>TableTemplate.xaml</DependentUpon>
     </Compile>
     <Compile Include="Validation\ConfirmPasswordValidate.cs" />
     <Compile Include="Validation\EmailValidation.cs" />
@@ -144,6 +165,11 @@
     <Compile Include="Validation\RequiredValidation.cs" />
     <Compile Include="Validation\UniqueValidation.cs" />
     <Compile Include="ViewModel\BaseViewModel.cs" />
+    <Compile Include="ViewModel\BillDetailViewModel.cs" />
+    <Compile Include="ViewModel\BillOnlineDetailViewModel.cs" />
+    <Compile Include="ViewModel\BillOnlineViewModel.cs" />
+    <Compile Include="ViewModel\BillViewModel.cs" />
+    <Compile Include="ViewModel\CustomerViewModel.cs" />
     <Compile Include="ViewModel\DrinkTypeViewModel.cs" />
     <Compile Include="ViewModel\DrinkDessertViewModel.cs" />
     <Compile Include="ViewModel\HomeViewModel.cs" />
@@ -152,6 +178,7 @@
     <Compile Include="ViewModel\MD5Provider.cs" />
     <Compile Include="ViewModel\PasswordHelper.cs" />
     <Compile Include="ViewModel\SignupViewModel.cs" />
+    <Compile Include="ViewModel\TableViewModel.cs" />
     <Page Include="HomeWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -179,11 +206,35 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="TemplateView\BillDetailTemplate.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="TemplateView\BillOnlineDetailTemplate.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="TemplateView\BillOnlineTemplate.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="TemplateView\BillTemplate.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="TemplateView\CustomerTemplate.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="TemplateView\DrinkTypeTemplate.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="TemplateView\FoodDrinkTemplate.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="TemplateView\TableTemplate.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -232,12 +283,12 @@
     <Resource Include="CoffeeHomeFont\RobotoCondensed-Light.ttf" />
     <Resource Include="CoffeeHomeFont\RobotoCondensed-LightItalic.ttf" />
     <Resource Include="CoffeeHomeFont\RobotoCondensed-Regular.ttf" />
-    <EntityDeploy Include="Model\CoffeeHomeEntityModel.edmx">
+    <EntityDeploy Include="Model\CoffeeHome.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>CoffeeHomeEntityModel.Designer.cs</LastGenOutput>
+      <LastGenOutput>CoffeeHome.Designer.cs</LastGenOutput>
     </EntityDeploy>
-    <None Include="Model\CoffeeHomeEntityModel.edmx.diagram">
-      <DependentUpon>CoffeeHomeEntityModel.edmx</DependentUpon>
+    <None Include="Model\CoffeeHome.edmx.diagram">
+      <DependentUpon>CoffeeHome.edmx</DependentUpon>
     </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
@@ -259,19 +310,26 @@
   <ItemGroup>
     <Resource Include="Images\drink-food.png" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Resource Include="Images\bill_online_detail.png" />
+    <Resource Include="Images\bill_online.png" />
+    <Resource Include="Images\bill_detail.png" />
+    <Resource Include="Images\bill.png" />
+    <Resource Include="Images\table.png" />
+    <Resource Include="Images\customer.png" />
+    <Content Include="Model\CoffeeHome.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>CoffeeHome.edmx</DependentUpon>
+      <LastGenOutput>CoffeeHome.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Model\CoffeeHome.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>CoffeeHome.edmx</DependentUpon>
+      <LastGenOutput>CoffeeHome.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
   <ItemGroup>
     <Resource Include="Images\left-arrow.png" />
-    <Content Include="Model\CoffeeHomeEntityModel.Context.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <LastGenOutput>CoffeeHomeEntityModel.Context.cs</LastGenOutput>
-      <DependentUpon>CoffeeHomeEntityModel.edmx</DependentUpon>
-    </Content>
-    <Content Include="Model\CoffeeHomeEntityModel.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>CoffeeHomeEntityModel.edmx</DependentUpon>
-      <LastGenOutput>CoffeeHomeEntityModel.cs</LastGenOutput>
-    </Content>
   </ItemGroup>
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />

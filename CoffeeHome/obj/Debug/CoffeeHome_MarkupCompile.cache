@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 E:\Code Visual 2013\CoffeeHome\CoffeeHome\App.xaml
-62080818470
-21813036808
-44950928391
+12-2063838052
+2828594563
+61-1678372714
 22235059291
-HomeWindow.xaml;MainWindow.xaml;SignupWindow.xaml;TemplateView\AdminTemplate.xaml;TemplateView\DrinkTypeTemplate.xaml;TemplateView\FoodDrinkTemplate.xaml;
+HomeWindow.xaml;MainWindow.xaml;SignupWindow.xaml;TemplateView\AdminTemplate.xaml;TemplateView\BillDetailTemplate.xaml;TemplateView\BillOnlineDetailTemplate.xaml;TemplateView\BillOnlineTemplate.xaml;TemplateView\BillTemplate.xaml;TemplateView\CustomerTemplate.xaml;TemplateView\DrinkTypeTemplate.xaml;TemplateView\FoodDrinkTemplate.xaml;TemplateView\TableTemplate.xaml;
 
 False
 

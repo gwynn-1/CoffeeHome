@@ -39,3 +39,15 @@ E:\Code Visual 2013\CoffeeHome\CoffeeHome\obj\Debug\TemplateView\FoodDrinkTempla
 E:\Code Visual 2013\CoffeeHome\CoffeeHome\obj\Debug\TemplateView\FoodDrinkTemplate.baml
 E:\Code Visual 2013\CoffeeHome\CoffeeHome\obj\Debug\TemplateView\DrinkTypeTemplate.g.cs
 E:\Code Visual 2013\CoffeeHome\CoffeeHome\obj\Debug\TemplateView\DrinkTypeTemplate.baml
+E:\Code Visual 2013\CoffeeHome\CoffeeHome\obj\Debug\TemplateView\CustomerTemplate.g.cs
+E:\Code Visual 2013\CoffeeHome\CoffeeHome\obj\Debug\TemplateView\CustomerTemplate.baml
+E:\Code Visual 2013\CoffeeHome\CoffeeHome\obj\Debug\TemplateView\TableTemplate.g.cs
+E:\Code Visual 2013\CoffeeHome\CoffeeHome\obj\Debug\TemplateView\TableTemplate.baml
+E:\Code Visual 2013\CoffeeHome\CoffeeHome\obj\Debug\TemplateView\BillTemplate.g.cs
+E:\Code Visual 2013\CoffeeHome\CoffeeHome\obj\Debug\TemplateView\BillTemplate.baml
+E:\Code Visual 2013\CoffeeHome\CoffeeHome\obj\Debug\TemplateView\BillDetailTemplate.g.cs
+E:\Code Visual 2013\CoffeeHome\CoffeeHome\obj\Debug\TemplateView\BillDetailTemplate.baml
+E:\Code Visual 2013\CoffeeHome\CoffeeHome\obj\Debug\TemplateView\BillOnlineTemplate.g.cs
+E:\Code Visual 2013\CoffeeHome\CoffeeHome\obj\Debug\TemplateView\BillOnlineTemplate.baml
+E:\Code Visual 2013\CoffeeHome\CoffeeHome\obj\Debug\TemplateView\BillOnlineDetailTemplate.g.cs
+E:\Code Visual 2013\CoffeeHome\CoffeeHome\obj\Debug\TemplateView\BillOnlineDetailTemplate.baml

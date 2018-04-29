@@ -16,7 +16,7 @@ namespace CoffeeHome.Model
     public partial class CoffeeHomeEntities : DbContext
     {
         public CoffeeHomeEntities()
-            : base("name=CoffeeHomeEntities")
+            : base("name=CoffeeHomeEntities1")
         {
         }
     
@@ -33,7 +33,6 @@ namespace CoffeeHome.Model
         public virtual DbSet<Drink_type> Drink_type { get; set; }
         public virtual DbSet<DrinkAndDessert> DrinkAndDesserts { get; set; }
         public virtual DbSet<Staff> Staffs { get; set; }
-        public virtual DbSet<sysdiagram> sysdiagrams { get; set; }
         public virtual DbSet<Table> Tables { get; set; }
     }
 }
