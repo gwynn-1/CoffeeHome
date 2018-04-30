@@ -57,7 +57,7 @@
                        HorizontalAlignment="Left"
                        Margin="30, 0, 0, 0"
                        Foreground="Black"
-                       FontSize="30" FontFamily="/CoffeeHome;component/CoffeeHomeFont/#SF Espresso Shack" 
+                       FontSize="30" FontFamily="/CoffeeHome;component/Asset/CoffeeHomeFont/#SF Espresso Shack" 
                        FontWeight="Bold">
                 Coffee Home
             </TextBlock>
@@ -70,7 +70,7 @@
                      FontSize="14"
                      materialDesign:ValidationAssist.Suppress="False"
                      materialDesign:ValidationAssist.OnlyShowOnFocus="True"
-                     FontFamily="/CoffeeHome;component/CoffeeHomeFont/#Roboto"
+                     FontFamily="/CoffeeHome;component/Asset/CoffeeHomeFont/#Roboto"
                      materialDesign:HintAssist.Hint="Tài khoản"
                      Style="{StaticResource MaterialDesignFloatingHintTextBox}">
                         <TextBox.Text>
@@ -87,7 +87,7 @@
                 <PasswordBox Margin="100, 30 , 100, 0"
                      x:Name="txbpPassword"
                      FontSize="14"
-                     FontFamily="/CoffeeHome;component/CoffeeHomeFont/#Roboto"
+                     FontFamily="/CoffeeHome;component/Asset/CoffeeHomeFont/#Roboto"
                      materialDesign:HintAssist.Hint="Mật khẩu"
                      passwordhelper:PasswordHelper.Attach="True"
                      materialDesign:ValidationAssist.Suppress="False"
@@ -110,7 +110,7 @@
                         FontSize="16"
                         FontWeight="Bold"
                         Background="#EA8024"
-                        FontFamily="/CoffeeHome;component/CoffeeHomeFont/#Roboto"
+                        FontFamily="/CoffeeHome;component/Asset/CoffeeHomeFont/#Roboto"
                         Style="{StaticResource CustomLoginMaterialDesignRaisedDarkButton}"
                         materialDesign:ShadowAssist.ShadowDepth="Depth2"
                         Click="btnLogin_Click" Content="Đăng nhập">
@@ -134,7 +134,7 @@
                         FontSize="16"
                         FontWeight="Bold"
                         Background="#EA8024"
-                        FontFamily="/CoffeeHome;component/CoffeeHomeFont/#Roboto"
+                        FontFamily="/CoffeeHome;component/Asset/CoffeeHomeFont/#Roboto"
                         Style="{StaticResource MaterialDesignRaisedDarkButton}"
                         materialDesign:ShadowAssist.ShadowDepth="Depth2">
                         Thoát

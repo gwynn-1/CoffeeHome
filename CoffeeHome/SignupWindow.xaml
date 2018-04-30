@@ -56,7 +56,7 @@
                                   Margin="2">
             <Grid>
                 <Button HorizontalAlignment="Left" Padding="0" x:Name="BackButton" Click="BackButton_Click" BorderThickness="0" Width="24" Height="24" Background="Transparent">
-                    <Image Source="Images/left-arrow.png" Width="24" Height="24" HorizontalAlignment="Center"></Image>
+                    <Image Source="Asset/Images/left-arrow.png" Width="24" Height="24" HorizontalAlignment="Center"></Image>
                 </Button>
                 <TextBlock VerticalAlignment="Center"
                                HorizontalAlignment="Left"
@@ -64,7 +64,7 @@
                                FontWeight="Bold"
                                FontSize="20"
                                Foreground="#FF2B2B2B"
-                               FontFamily="/CoffeeHome;component/CoffeeHomeFont/#Roboto">
+                               FontFamily="/CoffeeHome;component/Asset/CoffeeHomeFont/#Roboto">
                             Sign up - Admin
                 </TextBlock>
             </Grid>
@@ -76,7 +76,7 @@
                      FontSize="14"
                      materialDesign:ValidationAssist.Suppress="False"
                      materialDesign:ValidationAssist.OnlyShowOnFocus="True"
-                     FontFamily="/CoffeeHome;component/CoffeeHomeFont/#Roboto"
+                     FontFamily="/CoffeeHome;component/Asset/CoffeeHomeFont/#Roboto"
                      materialDesign:HintAssist.Hint="Tên"
                      Style="{StaticResource MaterialDesignFloatingHintTextBox}">
                     <TextBox.Text>
@@ -94,7 +94,7 @@
                 <TextBox Margin="100,20,100,0"
                      x:Name="txbUsername"
                      FontSize="14"
-                     FontFamily="/CoffeeHome;component/CoffeeHomeFont/#Roboto"
+                     FontFamily="/CoffeeHome;component/Asset/CoffeeHomeFont/#Roboto"
                      materialDesign:ValidationAssist.Suppress="False"
                      materialDesign:ValidationAssist.OnlyShowOnFocus="True"
                      materialDesign:HintAssist.Hint="Tên Đăng nhập"
@@ -115,7 +115,7 @@
                 <PasswordBox Margin="100, 20 , 100, 0"
                      x:Name="txbpPassword"
                      FontSize="14"
-                     FontFamily="/CoffeeHome;component/CoffeeHomeFont/#Roboto"
+                     FontFamily="/CoffeeHome;component/Asset/CoffeeHomeFont/#Roboto"
                      passwordhelper:PasswordHelper.Attach="True"
                      materialDesign:ValidationAssist.Suppress="False"
                      materialDesign:ValidationAssist.OnlyShowOnFocus="True"
@@ -136,7 +136,7 @@
                 <PasswordBox Margin="100, 20 , 100, 0"
                      x:Name="txbpRepassword"
                      FontSize="14"
-                     FontFamily="/CoffeeHome;component/CoffeeHomeFont/#Roboto"
+                     FontFamily="/CoffeeHome;component/Asset/CoffeeHomeFont/#Roboto"
                      materialDesign:ValidationAssist.Suppress="False"
                      materialDesign:ValidationAssist.OnlyShowOnFocus="True"
                      passwordhelper:PasswordHelper.Attach="True"
@@ -163,7 +163,7 @@
                 <TextBox Margin="100,20,100,0"
                      x:Name="txbEmail"
                      FontSize="14"
-                     FontFamily="/CoffeeHome;component/CoffeeHomeFont/#Roboto"
+                     FontFamily="/CoffeeHome;component/Asset/CoffeeHomeFont/#Roboto"
                      materialDesign:HintAssist.Hint="Email"
                      materialDesign:ValidationAssist.Suppress="False"
                      materialDesign:ValidationAssist.OnlyShowOnFocus="True"
@@ -185,7 +185,7 @@
                 <TextBox Margin="100,20,100,0"
                      x:Name="txbSDT"
                      FontSize="14"
-                     FontFamily="/CoffeeHome;component/CoffeeHomeFont/#Roboto"
+                     FontFamily="/CoffeeHome;component/Asset/CoffeeHomeFont/#Roboto"
                      materialDesign:HintAssist.Hint="Số điện thoại"
                      materialDesign:ValidationAssist.Suppress="False"
                      materialDesign:ValidationAssist.OnlyShowOnFocus="True"
@@ -210,7 +210,7 @@
                         FontSize="16"
                         FontWeight="Bold"
                         Background="#EA8024"
-                        FontFamily="/CoffeeHome;component/CoffeeHomeFont/#Roboto"
+                        FontFamily="/CoffeeHome;component/Asset/CoffeeHomeFont/#Roboto"
                         Style="{StaticResource CustomMaterialDesignRaisedDarkButton}"
                         materialDesign:ShadowAssist.ShadowDepth="Depth2"
                         Click="btnSignup_Click"
@@ -240,7 +240,7 @@
                         FontSize="16"
                         FontWeight="Bold"
                         Background="#EA8024"
-                        FontFamily="/CoffeeHome;component/CoffeeHomeFont/#Roboto"
+                        FontFamily="/CoffeeHome;component/Asset/CoffeeHomeFont/#Roboto"
                         Style="{StaticResource MaterialDesignRaisedDarkButton}"
                         materialDesign:ShadowAssist.ShadowDepth="Depth2">
                     Thoát

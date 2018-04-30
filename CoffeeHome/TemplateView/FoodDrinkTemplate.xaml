@@ -51,21 +51,46 @@
                 <materialDesign:MaterialDataGridTextColumn Binding="{Binding price}"
                                                               Header="Giá tiền"
                                                               EditingElementStyle="{StaticResource MaterialDesignDataGridTextColumnPopupEditingStyle}"/>
-                <materialDesign:MaterialDataGridTextColumn Binding="{Binding image}"
-                                                              Header="Hình ảnh"
-                                                              EditingElementStyle="{StaticResource MaterialDesignDataGridTextColumnPopupEditingStyle}"/>
+                <DataGridTemplateColumn Header="Hình ảnh" Width="SizeToCells"
+                                        IsReadOnly="True">
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <Image Source="{Binding image}" Width="90" Height="90"/>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
                 <materialDesign:MaterialDataGridTextColumn Binding="{Binding updated_at}"
                                                               Header="Ngày Sửa"
                                                               EditingElementStyle="{StaticResource MaterialDesignDataGridTextColumnPopupEditingStyle}"/>
                 <materialDesign:MaterialDataGridTextColumn Binding="{Binding created_at}"
                                                               Header="Ngày Tạo"
                                                               EditingElementStyle="{StaticResource MaterialDesignDataGridTextColumnPopupEditingStyle}"/>
-
+                <DataGridTemplateColumn Header="Hành động" Width="100"
+                                        IsReadOnly="True">
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <StackPanel Orientation="Vertical">
+                                <Button Content="Sửa" 
+                                        Margin="0 0 0 4" 
+                                        Padding="0"
+                                        Width="50"
+                                        Height="20"
+                                        FontSize="9"
+                                        FontFamily="/CoffeeHome;component/Asset/CoffeeHomeFont/#Roboto"></Button>
+                                <Button Content="Xóa" 
+                                        Margin="0 4 0 0" 
+                                        Padding="0" 
+                                        Width="50"
+                                        Height="20"
+                                        FontSize="9"
+                                        FontFamily="/CoffeeHome;component/Asset/CoffeeHomeFont/#Roboto"></Button>
+                            </StackPanel>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
 
                 <!-- use custom combo box column to get better combos. Use ItemsSourceBinding as your binding template to be applied to each combo -->
-                <materialDesign:MaterialDataGridComboBoxColumn Header="Action"
-                                                                  SelectedValueBinding="{Binding Food}"
-                                                                  ItemsSourceBinding="{Binding RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type DataGrid}}, Path=DataContext.Foods}" />
+                
             </DataGrid.Columns>
         </DataGrid>
     </Grid>
