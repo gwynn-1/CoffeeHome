@@ -6,6 +6,7 @@
         xmlns:local="clr-namespace:CoffeeHome"
         xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
         xmlns:signupviewmodel="clr-namespace:CoffeeHome.ViewModel"
+        xmlns:passwordhelper="clr-namespace:CoffeeHome.Vendor.PasswordHelper.Source"
         xmlns:validation="clr-namespace:CoffeeHome.Validation"
         xmlns:converter="clr-namespace:CoffeeHome.Converter"
         xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity"
@@ -115,12 +116,12 @@
                      x:Name="txbpPassword"
                      FontSize="14"
                      FontFamily="/CoffeeHome;component/CoffeeHomeFont/#Roboto"
-                     signupviewmodel:PasswordHelper.Attach="True"
+                     passwordhelper:PasswordHelper.Attach="True"
                      materialDesign:ValidationAssist.Suppress="False"
                      materialDesign:ValidationAssist.OnlyShowOnFocus="True"
                      materialDesign:HintAssist.Hint="Mật khẩu"
                      Style="{StaticResource MaterialDesignFloatingHintPasswordBox}">
-                    <signupviewmodel:PasswordHelper.Password>
+                    <passwordhelper:PasswordHelper.Password>
                         <Binding Path="StaffViewObject.password" UpdateSourceTrigger="PropertyChanged" Mode="OneWayToSource" Delay="700"
                              ValidatesOnDataErrors="True">
                             <Binding.ValidationRules>
@@ -128,7 +129,7 @@
                                 <validation:PasswordValidation PropertyName="Mật khẩu" ValidatesOnTargetUpdated="True"/>
                             </Binding.ValidationRules>
                         </Binding>
-                    </signupviewmodel:PasswordHelper.Password>
+                    </passwordhelper:PasswordHelper.Password>
                 </PasswordBox>
             </AdornerDecorator>
             <AdornerDecorator>
@@ -138,13 +139,13 @@
                      FontFamily="/CoffeeHome;component/CoffeeHomeFont/#Roboto"
                      materialDesign:ValidationAssist.Suppress="False"
                      materialDesign:ValidationAssist.OnlyShowOnFocus="True"
-                     signupviewmodel:PasswordHelper.Attach="True"
+                     passwordhelper:PasswordHelper.Attach="True"
                      materialDesign:HintAssist.Hint="Nhập lại mật khẩu"
                      Style="{StaticResource MaterialDesignFloatingHintPasswordBox}">
                     <PasswordBox.Resources>
-                        <validation:BindingProxy x:Key="TargetProxy" Data="{Binding Path=(signupviewmodel:PasswordHelper.Password), ElementName=txbpPassword, UpdateSourceTrigger=PropertyChanged}"/>
+                        <validation:BindingProxy x:Key="TargetProxy" Data="{Binding Path=(passwordhelper:PasswordHelper.Password), ElementName=txbpPassword, UpdateSourceTrigger=PropertyChanged}"/>
                     </PasswordBox.Resources>
-                    <signupviewmodel:PasswordHelper.Password>
+                    <passwordhelper:PasswordHelper.Password>
                         <Binding Path="StaffViewObject.password" UpdateSourceTrigger="PropertyChanged" Mode="OneWayToSource" Delay="700"
                              ValidatesOnDataErrors="True">
                             <Binding.ValidationRules>
@@ -155,7 +156,7 @@
                                 </validation:ConfirmPasswordValidate>
                             </Binding.ValidationRules>
                         </Binding>
-                    </signupviewmodel:PasswordHelper.Password>
+                    </passwordhelper:PasswordHelper.Password>
                 </PasswordBox>
             </AdornerDecorator>
             <AdornerDecorator>
@@ -222,8 +223,8 @@
                                         <MultiBinding.Bindings>
                                             <Binding ElementName="txbName" Path="Text"/>
                                             <Binding ElementName="txbUsername" Path="Text"/>
-                                            <Binding ElementName="txbpPassword" Path="(signupviewmodel:PasswordHelper.Password)"/>
-                                            <Binding ElementName="txbpRepassword" Path="(signupviewmodel:PasswordHelper.Password)"/>
+                                            <Binding ElementName="txbpPassword" Path="(passwordhelper:PasswordHelper.Password)"/>
+                                            <Binding ElementName="txbpRepassword" Path="(passwordhelper:PasswordHelper.Password)"/>
                                             <Binding ElementName="txbEmail" Path="Text"/>
                                             <Binding ElementName="txbSDT" Path="Text"/>
                                         </MultiBinding.Bindings>

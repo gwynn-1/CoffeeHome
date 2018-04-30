@@ -5,7 +5,7 @@ using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CoffeeHome.ViewModel
+namespace CoffeeHome.Vendor.MD5Provider.Source
 {
     public static class MD5Provider
     {

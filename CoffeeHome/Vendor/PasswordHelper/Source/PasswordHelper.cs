@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
 
-namespace CoffeeHome.ViewModel
+namespace CoffeeHome.Vendor.PasswordHelper.Source
 {
     public static class PasswordHelper
     {

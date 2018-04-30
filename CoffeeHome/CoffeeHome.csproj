@@ -164,6 +164,8 @@
     <Compile Include="Validation\PasswordValidation.cs" />
     <Compile Include="Validation\RequiredValidation.cs" />
     <Compile Include="Validation\UniqueValidation.cs" />
+    <Compile Include="Vendor\MD5Provider\Source\MD5Provider.cs" />
+    <Compile Include="Vendor\PasswordHelper\Source\PasswordHelper.cs" />
     <Compile Include="ViewModel\BaseViewModel.cs" />
     <Compile Include="ViewModel\BillDetailViewModel.cs" />
     <Compile Include="ViewModel\BillOnlineDetailViewModel.cs" />
@@ -175,8 +177,6 @@
     <Compile Include="ViewModel\HomeViewModel.cs" />
     <Compile Include="ViewModel\ItemField.cs" />
     <Compile Include="ViewModel\MainViewModel.cs" />
-    <Compile Include="ViewModel\MD5Provider.cs" />
-    <Compile Include="ViewModel\PasswordHelper.cs" />
     <Compile Include="ViewModel\SignupViewModel.cs" />
     <Compile Include="ViewModel\TableViewModel.cs" />
     <Page Include="HomeWindow.xaml">
@@ -334,5 +334,6 @@
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
